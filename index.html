@@ -2,45 +2,87 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Roma</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <!-- Encabezado principal de la página. Podría agregar un enlace al inicio en el futuro. -->
     <header>
         <h1>¡Hola, soy Roma!</h1>
-        <p>Data Engineer apasionada por los datos y la tecnología.</p>
+        <p>Data Engineer apasionada por los datos y la tecnología</p>
     </header>
 
-    <main>
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#tecnologias">Tecnologías</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
-        <!-- Sección de presentación sobre mí-->
-        <article class="presentacion">
-            <h2>Sobre mí</h2>
-            <p>Soy Data Engineer con experiencia en la construcción de pipelines de datos, modelado de bases de datos y optimización de flujos de información. Me encanta transformar datos en soluciones reales.</p>
+    <main>
+        <article id="sobre-mi" class="presentacion">
+            <div>
+                <h2>Sobre mí</h2>
+                <p>Data Engineer con experiencia en la construcción y optimización de pipelines de datos. Mi pasión por la tecnología y los datos me ha llevado a especializarme en la creación de soluciones escalables y eficientes.</p>
+                <p>Mi enfoque se centra en transformar datos complejos en información valiosa que impulsa la toma de decisiones empresariales. Me especializo en el diseño de arquitecturas de datos, ETL, y la implementación de soluciones en la nube.</p>
+                <p>Además de mi trabajo técnico, disfruto compartiendo conocimiento a través de mentorías y participando en comunidades de tecnología. Mi objetivo es seguir creciendo profesionalmente mientras contribuyo al desarrollo de soluciones innovadoras en el campo de la ingeniería de datos.</p>
+            </div>
             <img src="img/foto_de_Roma.jpeg" alt="Foto de Roma" class="mi-foto">
         </article>
 
-        <!-- Tabla para mostrar tecnologías que manejo y hobbies -->
-        <article class="tecnologias">
-            <h2>Tecnologías y Hobbies</h2>
+        <article id="servicios" class="servicios">
+            <h2>¿Qué hago?</h2>
+            <div class="servicio-card">
+                <i class="fas fa-database"></i>
+                <h3>Diseño de Bases de Datos</h3>
+                <p>Creación y optimización de esquemas de bases de datos para maximizar el rendimiento y la escalabilidad.</p>
+            </div>
+            <div class="servicio-card">
+                <i class="fas fa-code-branch"></i>
+                <h3>Desarrollo de ETL</h3>
+                <p>Implementación de pipelines de datos robustos y mantenibles usando las mejores prácticas de la industria.</p>
+            </div>
+            <div class="servicio-card">
+                <i class="fas fa-cloud"></i>
+                <h3>Arquitectura Cloud</h3>
+                <p>Diseño e implementación de soluciones de datos en la nube, principalmente en Azure Synapse.</p>
+            </div>
+            <div class="servicio-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Análisis de Datos</h3>
+                <p>Transformación de datos en insights valiosos para la toma de decisiones empresariales.</p>
+            </div>
+        </article>
+
+        <article id="tecnologias" class="tecnologias">
+            <h2>Tecnologías</h2>
             <table>
                 <tr>
-                    <th>Conozco</th>
-                    <th>Quiero Aprender</th>
-                    <th>Hobbies</th>
+                    <th>Lenguajes</th>
+                    <th>Herramientas</th>
+                    <th>Cloud</th>
                 </tr>
                 <tr>
-                    <td>Python, SQL, Airflow, AWS</td>
-                    <td>Scala, Apache Flink, Kubernetes</td>
-                    <td>Patinar en rollers, aprender de todo, correr</td>
+                    <td>Python, SQL</td>
+                    <td>Airflow, Git</td>
+                    <td>AWS (S3, Redshift)</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Docker, Kubernetes</td>
+                    <td>AWS Lambda</td>
+                </tr>
+                <tr>
+                    <td>Scala (en aprendizaje)</td>
+                    <td>Apache Spark</td>
+                    <td>AWS EMR</td>
                 </tr>
             </table>
         </article>
 
-        <!-- Formulario de contacto sencillo. A mejorar: Implementar validaciones y conexión a backend. -->
-        <article class="contacto">
+        <article id="contacto" class="contacto">
             <h2>Contáctame</h2>
             <form>
                 <label for="nombre">Nombre:</label>
@@ -55,15 +97,16 @@
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" id="telefono" name="telefono">
 
-                <button type="submit">Enviar</button>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
             </form>
         </article>
-
     </main>
 
     <footer>
-        <p>&copy; 2025 Roma. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Roma. Todos los derechos reservados.</p>
     </footer>
-
 </body>
 </html>
