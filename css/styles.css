@@ -1,0 +1,102 @@
+/* Importo la fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos generales del body de la página. Mejorar: Añadir animaciones suaves al hacer scroll.*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    color: #000000; /* Texto en negro */
+}
+
+/* Estilizo el encabezado principal, con fondo negro */
+header {
+    background-color: #000000;
+    color: #f5dae9;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Imagen de perfil. Quizás podría agregarle un efecto sombreado*/
+.mi-foto {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Presentación, tecnologías y contacto */
+.presentacion, .tecnologias, .contacto {
+    background-color: #f4c6e0;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+    border-radius: 30px; /* Bordes redondeados */
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    }
+
+th, td {
+    border: 1px solid #4d4848;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Fondo de los titulos de cada columna */
+th {
+    background-color: #ffffff;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inputs */
+input {
+    margin-bottom: 15px; /* Más espacio abajo de cada input */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Botón */
+button {
+    width: 300px; /*Ancho fijo */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #3e373a;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 20px auto 0; /* Margen arriba y automático a los costados para centrar */
+    display: block; /* Para que el margin auto funcione */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+button:hover {
+    background-color: #5a4e53;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000000;
+    color: #f5dae9;
+    margin-top: 20px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Roma</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado principal de la página. Podría agregar un enlace al inicio en el futuro. -->
+    <header>
+        <h1>¡Hola, soy Roma!</h1>
+        <p>Data Engineer apasionada por los datos y la tecnología.</p>
+    </header>
+
+    <main>
+
+        <!-- Sección de presentación sobre mí-->
+        <article class="presentacion">
+            <h2>Sobre mí</h2>
+            <p>Soy Data Engineer con experiencia en la construcción de pipelines de datos, modelado de bases de datos y optimización de flujos de información. Me encanta transformar datos en soluciones reales.</p>
+            <img src="img/foto_de_Roma.jpeg" alt="Foto de Roma" class="mi-foto">
+        </article>
+
+        <!-- Tabla para mostrar tecnologías que manejo y hobbies -->
+        <article class="tecnologias">
+            <h2>Tecnologías y Hobbies</h2>
+            <table>
+                <tr>
+                    <th>Conozco</th>
+                    <th>Quiero Aprender</th>
+                    <th>Hobbies</th>
+                </tr>
+                <tr>
+                    <td>Python, SQL, Airflow, AWS</td>
+                    <td>Scala, Apache Flink, Kubernetes</td>
+                    <td>Patinar en rollers, aprender de todo, correr</td>
+                </tr>
+            </table>
+        </article>
+
+        <!-- Formulario de contacto sencillo. A mejorar: Implementar validaciones y conexión a backend. -->
+        <article class="contacto">
+            <h2>Contáctame</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Roma. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
